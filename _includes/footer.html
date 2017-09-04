@@ -1,26 +1,11 @@
 <footer class="last-screen">
 
 <div class="mdl-grid">
-<div class="footer-navigation mdl-grid mdl-cell--6-col">
-<nav class="mdl-navigation">
-    {% assign pages = site.pages | where: "hidenInHeader",nil | sort:"weight"  %}
-    {% for page in pages %}
-    {% if page.title %}
-    <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl}}">{{ page.title}}</a>
-    {% endif %}
-    {% endfor %}
-</nav>
-</div>
-<div class="footer-navigation mdl-grid mdl-cell--6-col">
-    <div class="mdl-layout-spacer"></div>
-    <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/terms-of-use/">Terms of use</a>
-        <a class="mdl-navigation__link" href="/privacy-policy/">Privacy policy</a>
-        <a class="mdl-navigation__link" id="discussion-icon" href="/feedback/"><i class="material-icons">chat_bubble</i> Feedback</a>
-    </nav>
-</div>
+  <div class="footer-navigation mdl-grid mdl-cell--6-col" style="display: flex;justify-content: center;">
+    <p class="legal-footer" style="">DataGraft is a service operated by the <a href="http://prodatamarket.eu/">proDataMarket</a> project, co-funded by the EC under H2020 Programme.</p>
+  </div>
 </div>
 
-<p class="legal-footer">DataGraft is a service operated by the <a href="http://prodatamarket.eu/">proDataMarket</a> project, co-funded by the EC under H2020 Programme.</p>
+
 
 </footer>

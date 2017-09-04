@@ -62,7 +62,12 @@ color:rgb(105,240,174);
 a:visited {
 color:rgb(104, 206, 156);
 }*/
-
+a:visited, a {
+  color: $dapaas-color-accent;
+}
+a:hover {
+  color: #ff2d7a;
+}
 .dapaas-header.mdl-layout__header {
     background-color: $dapaas-color;
     a:visited {
